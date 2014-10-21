@@ -1,17 +1,36 @@
-Catmandu-Atom - modules for working with Atom feeds
+NAME
+    Catmandu::Atom - modules for working with Atom feeds
 
-INSTALLATION
+SYNOPSIS
+            # From the command line
+            catmandu convert Atom --url http://my.host.org/feed.atom to JSON
 
-To install this module, run the following commands:
+            # From Perl
 
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
+            use Catmandu;
 
-SUPPORT AND DOCUMENTATION
+            my $importer = Catmandu->importer('Atom', url => 'http://my.host.org/feed.atom');
 
-After installing, you can find documentation for this module with the
-perldoc command.
+            $importer->each(sub {
+                    my $entry = shift;
 
-    perldoc Catmandu::Atom
+                    printf "%s\n" , $entry->{title};
+            });
+
+VERSION
+    Version 0.02
+
+MODULES
+    *   Catmandu::Exporter::Atom
+
+    *   Catmandu::Importer::Atom
+
+AUTHOR
+    Nicolas Steenlant, "<nicolas.steenlant at ugent.be>"
+
+CONTRIBUTOR
+    Vitali Peil, "<vitali.peil at uni-bielefeld.de>"
+
+MAINTAINER
+    Patrick Hochstenbach, "<patrick.hochstenbach at ugent.be>"
+

@@ -158,7 +158,10 @@ sub add {
     
     if (defined $data->{content}) {
         my $content = XML::Atom::Content->new;
-        $content->mode($data->{content}->{mode} ? $data->{content}->{mode} : "xml");
+        if ( defined $data->{content}->{mode} ) {
+          $content->mode($data->{content}->{mode});
+        }
+        #$content->mode($data->{content}->{mode} ? $data->{content}->{mode} : "xml");
         $content->body($data->{content}->{body});
         $entry->content($content);
     }
