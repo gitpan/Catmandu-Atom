@@ -17,9 +17,6 @@ SYNOPSIS
                     printf "%s\n" , $entry->{title};
             });
 
-VERSION
-    Version 0.02
-
 MODULES
     *   Catmandu::Exporter::Atom
 
@@ -29,7 +26,8 @@ AUTHOR
     Nicolas Steenlant, "<nicolas.steenlant at ugent.be>"
 
 CONTRIBUTOR
-    Vitali Peil, "<vitali.peil at uni-bielefeld.de>"
+    Vitali Peil, "<vitali.peil at uni-bielefeld.de>" Nicolas Franck,
+    "<nicolas.franck at ugent.be>"
 
 MAINTAINER
     Patrick Hochstenbach, "<patrick.hochstenbach at ugent.be>"

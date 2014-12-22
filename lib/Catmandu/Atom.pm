@@ -21,13 +21,9 @@ Catmandu::Atom - modules for working with Atom feeds
 		printf "%s\n" , $entry->{title};
 	});
 
-=head1 VERSION
-
-Version 0.02
-
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 MODULES
 
@@ -46,6 +42,7 @@ Nicolas Steenlant, C<< <nicolas.steenlant at ugent.be> >>
 =head1 CONTRIBUTOR
 
 Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
+Nicolas Franck, C<< <nicolas.franck at ugent.be> >>
 
 =head1 MAINTAINER
 

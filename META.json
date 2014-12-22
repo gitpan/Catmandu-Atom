@@ -4,7 +4,7 @@
       "Nicolas Steenlant, C<< <nicolas.steenlant at ugent.be> >>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.5, Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.023, Dist::Milla version v1.0.5, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -26,12 +26,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "develop" : {
@@ -48,6 +48,7 @@
       },
       "test" : {
          "requires" : {
+            "JSON" : "2.90",
             "Test::Exception" : "0",
             "Test::More" : "0",
             "Test::Pod" : "0"
@@ -66,7 +67,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Atom"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
       "Nicolas Franck <nicolas.franck@ugent.be>",
       "Nicolas Steenlant <nicolas.steenlant@ugent.be>",
